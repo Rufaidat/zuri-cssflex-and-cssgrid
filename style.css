@@ -7,10 +7,30 @@ body {
   height: 100vh;
   width: 100%;
 }
+header {
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  margin: 2rem;
+}
+a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+a:hover,
+a.active {
+  border-bottom: 2px solid orange;
+}
+a.active {
+  color: orangered;
+}
 .white {
   background-color: white;
   width: 70%;
-  height: 80%;
+  height: 70%;
   margin: 5rem auto;
   position: relative;
 }
