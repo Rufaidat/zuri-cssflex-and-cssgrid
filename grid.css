@@ -1,0 +1,46 @@
+.body {
+  background-color: #262626;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+.grid {
+  background-color: #1a1c28;
+  width: 40%;
+  height: 50%;
+  margin: 5rem auto;
+  padding: 5rem;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-areas:
+    "one one one two"
+    "three three four four";
+}
+.grid .one {
+  background-color: #eb5020;
+  grid-area: one;
+}
+.grid .two {
+  background-color: #ffa401;
+  grid-area: two;
+}
+.grid .three {
+  background-color: #05aa42;
+  grid-area: three;
+}
+.grid .four {
+  grid-area: four;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-areas:
+    "a"
+    "b";
+}
+.grid .four div:first-of-type {
+  background-color: #01aefd;
+  grid-area: a;
+}
+.grid .four div:last-of-type {
+  background-color: #01aefd;
+  grid-area: b;
+}
